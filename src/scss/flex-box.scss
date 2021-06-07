@@ -1,0 +1,48 @@
+/*
+SCSS file for Flex Box
+Reduces duplicate code by providing heavily used code blocks
+*/
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .wrap-mobile {
+    flex-wrap: wrap;
+  }
+}
+
+.reverse-wrap {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.x-centre {
+  justify-content: center;
+}
+
+.y-centre {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
