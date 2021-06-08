@@ -1,0 +1,30 @@
+.homepage-text {
+  font-size: 2em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3vh;
+}
+
+.chain-icon {
+  width: 8vw;
+  transition: all 200ms linear;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 200ms linear;
+    cursor: pointer;
+  }
+}
+
+.search-field-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.icon-row-wrapper {
+  margin-top: 3vh;
+}

@@ -1,15 +1,14 @@
 module.exports = {
     siteMetadata: {
         title: "AchTools",
-        description: 'Front end site for Snowge, the next moon rocket.', // TODO
-        author: 'SnowgeMami'
+        description: 'Front end site for ACHtools, the most advanced multichain DeFi dashboard.', // TODO
+        author: 'SnowgeMami & Eggs :)'
     },
     plugins: [
         "gatsby-plugin-sass",
         "gatsby-plugin-styled-components",
         "gatsby-plugin-image",
         "gatsby-plugin-react-helmet",
-        "gatsby-plugin-sitemap",
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
         "gatsby-plugin-theme-ui",

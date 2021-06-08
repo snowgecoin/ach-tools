@@ -6,8 +6,8 @@ export default {
         secondary: "#ff3434",
     },
     fonts: {
-        body: "system-ui, sans-serif",
-        heading: "system-ui, sans-serif",
+        body: "Consolas, system-ui, sans-serif",
+        heading: "Consolas, system-ui, sans-serif",
         monospace: "Menlo, monospace",
     },
     fontWeights: {
