@@ -8,10 +8,12 @@ import Container from "@material-ui/core/Container";
 import Helmet from "react-helmet";
 import Particles from 'react-particles-js';
 import '../scss/main.scss';
+import {ThemeProvider} from "@emotion/react";
+import darkTheme from "../gatsby-plugin-theme-ui";
 
 const IndexPage = () => {
     return (
-        <React.Fragment>
+        <ThemeProvider theme={darkTheme}>
           <Helmet>
               <meta charSet="utf-8" />
               <title>AchTools</title>
@@ -71,7 +73,7 @@ const IndexPage = () => {
                   <HomePage/>
               </Box>
           </Container>
-        </React.Fragment>
+        </ThemeProvider>
     )
 };
 

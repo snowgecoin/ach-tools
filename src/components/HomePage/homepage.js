@@ -6,7 +6,6 @@ import bsc from '../../images/bnb.png';
 import eth from '../../images/ethereum.png';
 import matic from '../../images/matic.png';
 import TextField from '@material-ui/core/TextField';
-import { withStyles } from "@material-ui/core/styles";
 import './homepage.scss'
 import 'aos/dist/aos.css';
 
@@ -48,7 +47,6 @@ export default function HomePage({props}) {
                       id="standard-full-width"
                       label={`Enter ${activeChain} Token Contract Address`}
                       placeholder="0x..."
-                      color="#ffffff"
                     />
                   {/* </form> */}
                 </div>

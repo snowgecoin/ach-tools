@@ -1,4 +1,4 @@
-export default {
+const darkTheme = {
     colors: {
         text: "#FFF",
         background: "#14181D ",
@@ -17,4 +17,6 @@ export default {
         slightlyBold: 500,
     },
     space: [0, 4, 8, 12, 20]
-}
+};
+
+export default darkTheme;
