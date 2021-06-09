@@ -71,6 +71,9 @@ const IndexPage = () => {
                               },
                               push: {
                                 particles_nb: 4
+                              },
+                              remove: {
+                                particles_nb: 4
                               }
                             }
               	        }
@@ -79,7 +82,9 @@ const IndexPage = () => {
               style={{
                 width: '100%',
                 height: '100%',
+                backgroundSize: 'cover'
               }}
+              height='100vh'
             />
           </div>
           <Container>
