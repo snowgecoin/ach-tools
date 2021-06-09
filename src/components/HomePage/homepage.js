@@ -91,7 +91,6 @@ export default function HomePage({props}) {
                       helperText={(textField.length !== 0 && textField.length !== 42) ? "Incorrect Number of Characters" : ""}
                       label={`Enter ${activeChain} Token Contract Address`}
                       placeholder="0x..."
-                      autoFocus
                       InputProps={{
                         startAdornment: (
                           <InputAdornment position="start">
