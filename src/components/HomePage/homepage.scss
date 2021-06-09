@@ -61,3 +61,13 @@
 .MuiInputLabel-formControl {
   text-align: right !important;
 }
+
+.go-button {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  background-color: #5DED6B;
+  border: 0px;
+  padding: 0px 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}

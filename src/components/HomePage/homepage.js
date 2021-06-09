@@ -69,7 +69,7 @@ export default function HomePage({props}) {
     const GoButton = () => {
       return(
         <InputAdornment position="end">
-          {textField.length === 42 && <button onClick={() => goToChart()}><ArrowForwardIosIcon/></button>}
+          {textField.length === 42 && <button onClick={() => goToChart()} className="go-button"><ArrowForwardIosIcon/></button>}
         </InputAdornment>
       )
     }
