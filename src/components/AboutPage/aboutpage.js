@@ -94,6 +94,18 @@ export default function AboutPage({props}) {
                 />
               </Box>
             </Box>
+            <Box className={'flex-row y-centre'}>
+                <div className="header-text focus-in-contract-bck">Roadmap</div>
+            </Box>
+            <Box data-aos="fade-up" data-aos-delay="1000">
+                <div className="body-text"><b>June 2021</b>: Coming Soon</div>
+                <div className="body-text"><b>July 2021</b>: Coming Soon</div>
+                <div className="body-text"><b>August 2021</b>: Coming Soon</div>
+                <div className="body-text"><b>September 2021</b>: Coming Soon</div>
+                <div className="body-text"><b>October 2021</b>: Coming Soon</div>
+                <div className="body-text"><b>November 2021</b>: Coming Soon</div>
+                <div className="body-text"><b>December 2021</b>: Coming Soon</div>
+            </Box>
         </Box>
     )
 }

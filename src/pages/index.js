@@ -83,11 +83,14 @@ const IndexPage = () => {
             />
           </div>
           <Container>
-              <Box data-aos="fade-down" data-aos-delay="1000">
+              <Box className="slide-in-top">
                   <Header></Header>
               </Box>
-              <Box>
+              <Box style={{minHeight: '60vh'}}>
                   <HomePage/>
+              </Box>
+              <Box data-aos="fade-up">
+                  <Footer></Footer>
               </Box>
           </Container>
         </ThemeProvider>

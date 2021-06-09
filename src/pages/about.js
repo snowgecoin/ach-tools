@@ -18,7 +18,7 @@ const About = () => {
                 <title>AchTools | About</title>
                 <link rel="canonical" href="http://ach.tools" />
             </Helmet>
-            <div className="animation-container">
+            <div className="animation-container-about">
               <Particles
                 params={{
                       background: {
@@ -70,6 +70,9 @@ const About = () => {
                 </Box>
                 <Box>
                     <AboutPage/>
+                </Box>
+                <Box>
+                    <Footer></Footer>
                 </Box>
             </Container>
         </ThemeProvider>
