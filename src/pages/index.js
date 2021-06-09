@@ -1,17 +1,34 @@
 /** @jsx jsx */
+import React from "react"
 import { jsx } from "theme-ui"
 import Header from "../components/Header";
 import HomePage from "../components/HomePage";
 import Footer from "../components/Footer";
 import Helmet from "react-helmet";
 import Particles from 'react-particles-js';
-import '../scss/main.scss';
 import {ThemeProvider} from "@emotion/react";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import darkTheme from "../gatsby-plugin-theme-ui";
+import 'aos/dist/aos.css';
+
 
 const IndexPage = () => {
+
+    let AOS;
+    React.useEffect(() => {
+      const AOS = require("aos");
+      AOS.init({
+        once: true,
+      });
+    }, []);
+
+    React.useEffect(() => {
+      if (AOS) {
+        AOS.refresh();
+      }
+    });
+
     return (
         <ThemeProvider theme={darkTheme}>
           <Helmet>
@@ -66,7 +83,7 @@ const IndexPage = () => {
             />
           </div>
           <Container>
-              <Box>
+              <Box data-aos="fade-down" data-aos-delay="1000">
                   <Header></Header>
               </Box>
               <Box>

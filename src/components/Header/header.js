@@ -48,7 +48,7 @@ export default function Header({props}) {
                 <GatsbyLink to={'/about'} style={linkStyle} className={'nav-button'}>
                     <Box className={'hover'}>Services ˬ</Box>
                 </GatsbyLink>
-                <GatsbyLink to={'/about'} style={rightMostLinkStyle} className={'nav-button'}>
+                <GatsbyLink to={'https://snowgecoin.com/swap/#/swap?outputCurrency=0xc13a1b47377a8382bd3f6f9105137c1e838758b9'} target="_blank" style={rightMostLinkStyle} className={'nav-button'}>
                     <Box className={'hover'}>Buy</Box>
                 </GatsbyLink>
             </Box>

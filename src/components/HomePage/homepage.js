@@ -39,9 +39,9 @@ export default function HomePage({props}) {
     return (
         <Box sx={{marginTop: '12vh', marginBottom: 20}}>
             <Box className={'flex-row y-centre'}>
-                <div className="homepage-text">The most advanced multichain defi dashboard</div>
+                <div className="homepage-text focus-in-contract-bck">The most advanced multichain defi dashboard</div>
             </Box>
-            <Box className={'flex-row y-centre'}>
+            <Box className={'flex-row y-centre'} data-aos="fade-up" data-aos-delay="1000">
                 <div className="search-field-wrapper">
                     <TextField
                       fullWidth
@@ -58,13 +58,13 @@ export default function HomePage({props}) {
                     />
                 </div>
             </Box>
-            <Box className={'flex-row y-centre x-centre icon-row-wrapper'}>
+            <Box className={'flex-row y-centre x-centre icon-row-wrapper'} data-aos="fade-up" data-aos-delay="1000">
                 <span className={'flex-spacer'}></span>
-                <img src={bsc} className="chain-icon" onClick={() => setActiveChain('BSC')}/>
+                <img src={bsc} className={`chain-icon ${activeChain == 'BSC' ? "" : "translucent"}`} onClick={() => setActiveChain('BSC')}/>
                 <span className={'flex-spacer'}></span>
-                <img src={eth} className="chain-icon" onClick={() => setActiveChain('Ethereum')}/>
+                <img src={eth} className={`chain-icon ${activeChain == 'Ethereum' ? "" : "translucent"}`} onClick={() => setActiveChain('Ethereum')}/>
                 <span className={'flex-spacer'}></span>
-                <img src={matic} className="chain-icon" onClick={() => setActiveChain('Polygon')}/>
+                <img src={matic} className={`chain-icon ${activeChain == 'Polygon' ? "" : "translucent"}`} onClick={() => setActiveChain('Polygon')}/>
                 <span className={'flex-spacer'}></span>
             </Box>
         </Box>
