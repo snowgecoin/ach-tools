@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
         title: "AchTools",
-        description: 'Front end site for Snowge, the next moon rocket.', // TODO
-        author: 'SnowgeMami'
+        description: 'Front end site for ACHtools, the most advanced multichain DeFi dashboard.', // TODO
+        author: 'SnowgeMami & Eggs :)'
     },
     flags: {
         DEV_SSR: false
