@@ -5,6 +5,8 @@ import bsc from '../../images/bnb.png';
 import eth from '../../images/ethereum.png';
 import matic from '../../images/matic.png';
 import TextField from '@material-ui/core/TextField';
+import SearchIcon from '@material-ui/icons/Search';
+import InputAdornment from '@material-ui/core/InputAdornment';
 import './homepage.scss'
 import 'aos/dist/aos.css';
 import {Box} from "@theme-ui/components";
@@ -41,14 +43,19 @@ export default function HomePage({props}) {
             </Box>
             <Box className={'flex-row y-centre'}>
                 <div className="search-field-wrapper">
-                  {/* <form noValidate autoComplete="off"> */}
                     <TextField
                       fullWidth
                       id="standard-full-width"
                       label={`Enter ${activeChain} Token Contract Address`}
                       placeholder="0x..."
+                      InputProps={{
+                        startAdornment: (
+                          <InputAdornment position="start">
+                            <SearchIcon/>
+                          </InputAdornment>
+                        ),
+                      }}
                     />
-                  {/* </form> */}
                 </div>
             </Box>
             <Box className={'flex-row y-centre x-centre icon-row-wrapper'}>

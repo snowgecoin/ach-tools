@@ -7,7 +7,7 @@
 }
 
 .chain-icon {
-  width: 8vw;
+  width: 5vw;
   transition: all 200ms linear;
 
   &:hover {
@@ -27,4 +27,30 @@
 
 .icon-row-wrapper {
   margin-top: 3vh;
+}
+
+.MuiInputBase-input {
+  color: white !important;
+}
+
+.MuiInputBase-root {
+  color: white !important;
+}
+
+.MuiInputLabel-root {
+  color: white !important;
+}
+
+.MuiInput-underline {
+  color: white !important;
+  border-bottom: 1px solid rgba(255,255,255, 0.42);
+}
+
+.MuiInput-underline:after {
+  color: white !important;
+  border-bottom: 2px solid #ffffff !important;
+}
+
+.MuiInputLabel-formControl {
+  text-align: right !important;
 }
