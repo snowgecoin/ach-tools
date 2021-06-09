@@ -4,6 +4,8 @@ import React from "react"
 import Box from "@material-ui/core/Box";
 import achIcon from "../../images/achIcon.png";
 import achTools from "../../images/achtextonlywhite.png";
+import './header.scss';
+import GatsbyLink from "gatsby-link";
 
 export default function Header({props}) {
     return (
@@ -14,10 +16,18 @@ export default function Header({props}) {
                 </Box>
                 <img src={achTools} alt={'ach tools'} height={'22px'}/>
                 <Box className={'flex-spacer'}/>
-                <Box mr={'20px'}>About</Box>
-                <Box mr={'20px'}>Charts</Box>
-                <Box mr={'20px'}>Services</Box>
-                <Box mr={'20px'}>Buy</Box>
+                <GatsbyLink mr={'20px'} to={'/about'} p={'12px'} className={'nav-button'}>
+                    <Box className={'hover'}>About</Box>
+                </GatsbyLink>
+                <Box mr={'20px'} p={'12px'} className={'nav-button'}>
+                    <Box className={'hover'}>Charts</Box>
+                </Box>
+                <Box mr={'20px'} p={'12px'} className={'nav-button'}>
+                    <Box className={'hover'}>Services</Box>
+                </Box>
+                <Box p={'12px'} className={'nav-button'}>
+                    <Box className={'hover'}>Buy</Box>
+                </Box>
             </Box>
         </Box>
     )

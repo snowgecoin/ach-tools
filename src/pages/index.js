@@ -1,14 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import Box from "@material-ui/core/Box";
 import Header from "../components/Header";
 import HomePage from "../components/HomePage";
 import Footer from "../components/Footer";
-import Container from "@material-ui/core/Container";
 import Helmet from "react-helmet";
 import Particles from 'react-particles-js';
 import '../scss/main.scss';
 import {ThemeProvider} from "@emotion/react";
+import Container from "@material-ui/core/Container";
+import Box from "@material-ui/core/Box";
 import darkTheme from "../gatsby-plugin-theme-ui";
 
 const IndexPage = () => {

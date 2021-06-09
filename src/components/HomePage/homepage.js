@@ -1,13 +1,13 @@
 /** @jsx jsx */
 import {jsx} from "theme-ui"
 import React from "react"
-import Box from "@material-ui/core/Box";
 import bsc from '../../images/bnb.png';
 import eth from '../../images/ethereum.png';
 import matic from '../../images/matic.png';
 import TextField from '@material-ui/core/TextField';
 import './homepage.scss'
 import 'aos/dist/aos.css';
+import {Box} from "@theme-ui/components";
 
 const styles = theme => ({
   input: {

@@ -1101,7 +1101,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.5.tgz#2c40f81449a4e554e9fc6396910ed4843ec2be50"
   integrity sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==
 
-"@emotion/react@^11.1.1":
+"@emotion/react@^11.1.1", "@emotion/react@latest":
   version "11.4.0"
   resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.4.0.tgz#2465ad7b073a691409b88dfd96dc17097ddad9b7"
   integrity sha512-4XklWsl9BdtatLoJpSjusXhpKv9YVteYKh9hPKP1Sxl+mswEFoUe0WtmtWjxEjkA51DQ2QRMCNOvKcSlCQ7ivg==
@@ -1970,7 +1970,7 @@
     "@theme-ui/css" "0.9.1"
     deepmerge "^4.2.2"
 
-"@theme-ui/components@0.9.1":
+"@theme-ui/components@0.9.1", "@theme-ui/components@latest":
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/@theme-ui/components/-/components-0.9.1.tgz#529165cfa01b9c573de6bc8726bfa2521ff4c40d"
   integrity sha512-ZrJd9AAEpQfEw+SNcr1A59z5MvuEy01ii4wjfpDhkNDyFmbr9malEos9d/JUE3ZwTu6QQnnB6xe9Hf0f5VE0ww==

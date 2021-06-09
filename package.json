@@ -35,6 +35,8 @@
     "sass": "^1.34.1",
     "theme-ui": "^0.9.1",
     "yarn": "^1.22.10",
-    "@emotion/react": "latest"
+    "@emotion/react": "latest",
+    "@theme-ui/components": "latest",
+    "gatsby-link": "latest"
   }
 }
