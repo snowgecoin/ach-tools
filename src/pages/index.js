@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import * as React from "react"
 import Box from "@material-ui/core/Box";
 import Header from "../components/Header";
 import Footer from "../components/Footer";

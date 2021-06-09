@@ -9,13 +9,14 @@ export default function Header({props}) {
     return (
         <Box sx={{marginTop: '12vh', marginBottom: 20}}>
             <Box className={'flex-row y-centre'}>
-                <img src={achIcon} height={'40px'} sx={{marginRight: 12, position: 'relative', top: '4px'}}/>
-                <img src={achTools} height={'22px'}/>
-                <span className={'flex-spacer'}></span>
-                <Box mr={6}>About</Box>
-                <Box mr={6}>Charts</Box>
-                <Box mr={6}>Services</Box>
-                <Box>Buy</Box>
+                <img src={achIcon} alt={'ach logo'} height={'40px'}
+                     sx={{marginRight: 12, position: 'relative', top: '4px'}}/>
+                <img src={achTools} alt={'ach tools'} height={'22px'}/>
+                <Box className={'flex-spacer'}></Box>
+                <Box sx={{marginRight: '20px'}}>About</Box>
+                <Box sx={{marginRight: '20px'}}>Charts</Box>
+                <Box sx={{marginRight: '20px'}}>Services</Box>
+                <Box sx={{marginRight: '20px'}}>Buy</Box>
             </Box>
         </Box>
     )
