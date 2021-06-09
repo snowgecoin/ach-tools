@@ -33,7 +33,7 @@ const IndexPage = () => {
         <ThemeProvider theme={darkTheme}>
           <Helmet>
               <meta charSet="utf-8" />
-              <title>AchTools</title>
+              <title>AchTools | Home</title>
               <link rel="canonical" href="http://ach.tools" />
           </Helmet>
           <div className="animation-container">
