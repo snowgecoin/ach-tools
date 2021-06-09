@@ -33,9 +33,9 @@ export default function Footer({props}) {
                 <span className={'flex-spacer'}></span>
                 <Box className={'flex-column'}>
                   <div className="footer-section-header">Charts</div>
-                  <a href=""><div className="footer-section-text">BSC</div></a>
-                  <a href=""><div className="footer-section-text">Etherem</div></a>
-                  <a href=""><div className="footer-section-text">Matic/Polygon</div></a>
+                  <a href="https://ach.tools"><div className="footer-section-text">BSC</div></a>
+                  <a href="https://eth.ach.tools"><div className="footer-section-text">Etherem</div></a>
+                  <a href="https://matic.ach.tools"><div className="footer-section-text">Matic/Polygon</div></a>
                 </Box>
                 <span className={'flex-spacer'}></span>
                 <span className={'flex-spacer'}></span>
