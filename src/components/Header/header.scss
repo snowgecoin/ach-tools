@@ -1,5 +1,7 @@
 .nav-button {
   text-decoration: none;
+  font-family: WhiteRabbit;
+  padding: 0px !important;
   .hover {
     text-align: center;
     margin: 0 auto;
@@ -10,7 +12,53 @@
     &:after {
       content: "";
       position: absolute;
-      bottom: -20px;
+      bottom: -21px;
+      width: 0;
+      height: 3px;
+      margin: 5px 0 0;
+      transition: all 0.1s ease-in-out;
+      transition-duration: 0.3s;
+      opacity: 0;
+      background-color: #5DED6B;
+    }
+    &:before {
+      left: 50%;
+      border-bottom-right-radius: 1.5px;
+      border-top-right-radius: 1.5px;
+    }
+    &:after {
+      right: 50%;
+      border-bottom-left-radius: 1.5px;
+      border-top-left-radius: 1.5px;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .hover {
+      &:before,
+      &:after {
+        width: 80%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.nav-button-dd {
+  text-decoration: none;
+  font-family: WhiteRabbit;
+  padding: 0px !important;
+  .hover {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
       width: 0;
       height: 3px;
       margin: 5px 0 0;
@@ -49,13 +97,19 @@
 
 .break-line-bottom {
   border-bottom: 1px solid rgb(217, 217, 217);
-  padding-bottom: 14.5px;
+  padding-bottom: 12.5px;
 }
 
 .social-icon {
   width: 1vw;
   margin-right: 1vw;
+  transition: all 200ms linear;
+  &:hover {
+    transform: rotateY(180deg);
+    transition: all 200ms linear;
+  }
 }
+
 
 .social-bar-wrapper {
   margin-bottom: 1vh;
@@ -71,4 +125,19 @@
   border: 2px solid rgb(138, 232, 122);
   cursor: pointer;
   margin-bottom: 5px;
+  transition: all 200ms linear;
+  &:hover {
+    color: white;
+    border: 2px solid white;
+    transition: all 200ms linear;
+  }
+}
+
+.simple-menu {
+  margin-top: 60px;
+  border-radius: 0px;
+}
+
+.MuiList-padding {
+  background-color: #14181D !important;
 }

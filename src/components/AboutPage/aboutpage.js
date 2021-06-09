@@ -46,9 +46,9 @@ export default function AboutPage({props}) {
     return (
         <Box sx={{marginTop: '12vh', marginBottom: 20}}>
             <Box className={'flex-row y-centre'}>
-                <div className="header-text focus-in-contract-bck">Overview</div>
+                <div className="header-text" data-aos="zoom-out">Overview</div>
             </Box>
-            <Box data-aos="fade-up" data-aos-delay="1000">
+            <Box data-aos="fade-up">
                 <div className="body-text">The most advanced Decentralized Finance (DeFi) dashboard - aiming to
                 supercharge your trading experience on the Binance Smart Chain (BSC), Polygon (Matic), and Ethereum (ETH).
                 </div>
@@ -63,9 +63,9 @@ export default function AboutPage({props}) {
             <Box className={'flex-row y-centre'}>
               <Box>
                 <Box className={'flex-row y-centre margin-top'}>
-                    <div className="header-text focus-in-contract-bck">Tokenomics</div>
+                    <div className="header-text" data-aos="zoom-out">Tokenomics</div>
                 </Box>
-                <Box data-aos="fade-up" data-aos-delay="1000">
+                <Box data-aos="fade-up">
                     <div className="body-text"><b>Total Supply (Initial)</b>: 10 million tokens; 50% burned at launch.</div>
                     <div className="body-text"><b>Transaction Fees</b>: 8% total. 4% burned on each transaction, and 4% redistributed to holders.</div>
                     <div className="body-text"><b>Team tokens</b>: Vested for 18 months, and will be released linearly
@@ -95,9 +95,9 @@ export default function AboutPage({props}) {
               </Box>
             </Box>
             <Box className={'flex-row y-centre'}>
-                <div className="header-text focus-in-contract-bck">Roadmap</div>
+                <div className="header-text" data-aos="zoom-out">Roadmap</div>
             </Box>
-            <Box data-aos="fade-up" data-aos-delay="1000">
+            <Box data-aos="fade-up">
                 <div className="body-text"><b>June 2021</b>: Coming Soon</div>
                 <div className="body-text"><b>July 2021</b>: Coming Soon</div>
                 <div className="body-text"><b>August 2021</b>: Coming Soon</div>

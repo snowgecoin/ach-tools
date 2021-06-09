@@ -10,8 +10,9 @@ export default function Footer({props}) {
     return (
         <Box sx={{marginTop: '12vh', marginBottom: 20}} className="break-line-top">
             <Box className={'flex-row'} style={{marginBottom: "2vh", marginTop: "2vh"}}>
-                <Box className={'flex-column'}>
+                <Box className={'flex-column footer-logo-box'}>
                   <img src={achTools} height={'22px'}/>
+                  <div className="footer-subtitle">Accelerate your finances</div>
                 </Box>
                 <span className={'flex-spacer'}></span>
                 <Box className={'flex-column'}>
