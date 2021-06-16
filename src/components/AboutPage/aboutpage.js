@@ -60,7 +60,7 @@ export default function AboutPage({props}) {
                  each supported platform, and more.
                  </div>
             </Box>
-            <Box className={'flex-row y-centre'}>
+            <Box className={'flex-row y-centre wrap-mobile'}>
               <Box>
                 <Box className={'flex-row y-centre margin-top'}>
                     <div className="header-text" data-aos="zoom-out">Tokenomics</div>
@@ -94,7 +94,7 @@ export default function AboutPage({props}) {
                 />
               </Box>
             </Box>
-            <Box className={'flex-row y-centre'}>
+            <Box className={'flex-row y-centre margin-top'}>
                 <div className="header-text" data-aos="zoom-out">Roadmap</div>
             </Box>
             <Box data-aos="fade-up">

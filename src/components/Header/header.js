@@ -154,9 +154,9 @@ export default function Header({props}) {
                   TransitionComponent={Fade}
                 >
                   <MenuItem onClick={handleServicesClose} style={menuStyle}>
-                    <Link style={menuLinkStyle} underline="none" component="a" color="white" href={'https://www.google.com'} target="_blank">
+                    <GatsbyLink style={menuLinkStyle} underline="none" component="a" color="white" to={'/advertising'}>
                       Advertising
-                    </Link>
+                    </GatsbyLink>
                   </MenuItem>
                   <MenuItem onClick={handleServicesClose} style={menuStyle}>
                     <Link style={menuLinkStyle} underline="none" component="a" color="white" href={'https://ach.tools/#/tabs/pricebots'} target="_blank">
