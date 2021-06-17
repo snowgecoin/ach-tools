@@ -143,3 +143,10 @@
 .MuiList-padding {
   background-color: #14181D !important;
 }
+
+@media (max-width: 768px) {
+  .social-icon {
+    width: 5vw;
+    margin-right: 4vw;
+  }
+}

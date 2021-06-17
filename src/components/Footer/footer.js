@@ -5,11 +5,15 @@ import Box from "@material-ui/core/Box";
 import achIcon from "../../images/achIcon.png";
 import achTools from "../../images/achtextonlywhite.png";
 import "./footer.scss";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 export default function Footer({props}) {
+
+    const isMobile = useMediaQuery('(max-width:768px)');
+
     return (
         <Box sx={{marginTop: '12vh', marginBottom: 20}} className="break-line-top">
-            <Box className={'flex-row'} style={{marginBottom: "2vh", marginTop: "2vh"}}>
+            <Box className={'flex-row wrap-mobile'} style={{marginBottom: "2vh", marginTop: "2vh"}}>
                 <Box className={'flex-column footer-logo-box'}>
                   <img src={achTools} height={'22px'}/>
                   <div className="footer-subtitle">Accelerate your finances</div>
@@ -39,7 +43,7 @@ export default function Footer({props}) {
                 </Box>
                 <span className={'flex-spacer'}></span>
                 <span className={'flex-spacer'}></span>
-                <Box className={'flex-column'}>
+                <Box className={'flex-column disclaimer-column'}>
                   <div className="disclaimer">The information provided by this website does not constitute
                   investment advice, financial advice, trading advice, or any other sort of advice. Conduct
                   your own due diligence before making any investment decisions.

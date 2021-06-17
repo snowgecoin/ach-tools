@@ -46,7 +46,7 @@ export default function AdPage({props}) {
     return (
         <Box sx={{marginTop: '12vh', marginBottom: 20}}>
             <Box className={'flex-row x-centre wrap-mobile'}>
-                <Box className={'flex-column'} mx={'5vw'}>
+                <Box className={'flex-column'} mx={'5vw'} mb={'5vh'}>
                   <div className="header-text" data-aos="zoom-out">Text Advertisements</div>
                   <div className="body-text" data-aos="fade-up">• Advertisements available for Ethereum, BSC, and Polygon</div>
                   <div className="body-text" data-aos="fade-up">• 800k+ users between all available telegram rooms</div>
@@ -57,7 +57,7 @@ export default function AdPage({props}) {
                   </div>
                   <div className="body-text" data-aos="fade-up"><b style={{color: '#5DED6B'}}>Pricing:</b> 2 BNB → 1 Week || 1 BNB → 3 Days</div>
                 </Box>
-                <Box className={'flex-column'} mx={'5vw'}>
+                <Box className={'flex-column'} mx={'5vw'} mb={'5vh'}>
                   <div className="header-text" data-aos="zoom-out">Token Posts</div>
                   <div className="body-text" data-aos="fade-up">• 4800+ Subscribers</div>
                   <div className="body-text" data-aos="fade-up">• Avid investors</div>
@@ -106,7 +106,7 @@ export default function AdPage({props}) {
             <Box className={'flex-row x-centre contact'} mt={'5vh'}>
               <Box className={'flex-column'}>
                 <div className="header-text">Contact us on Telegram to get started!</div>
-                <button className="buy-ads-button" data-aos="fade-up">Purchase Advertising</button>
+                <a href="https://t.me/dasilva333"><button className="buy-ads-button" data-aos="fade-up">Purchase Advertising</button></a>
               </Box>
             </Box>
         </Box>

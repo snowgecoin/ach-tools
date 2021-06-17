@@ -28,3 +28,28 @@
 .footer-logo-box {
   max-width: 10vw;
 }
+
+@media (max-width: 768px) {
+  span:nth-child(2), span:nth-child(8) {
+    flex-basis: 100%;
+  }
+
+  .disclaimer-column {
+    margin-top: 4vh;
+    width: 100vw !important;
+  }
+
+  .disclaimer {
+    max-width: 95vw;
+  }
+
+  .footer-subtitle {
+    width: 95vw;
+    margin-bottom: 4vh;
+  }
+
+  .footer-logo-box {
+    max-width: 95vw;
+    width: 150px;
+  }
+}

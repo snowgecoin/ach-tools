@@ -17,6 +17,16 @@ html, body {
   font-family: "Consolas", Inconsolata, sans-serif;
 }
 
+@media (max-width: 768px) {
+  body {
+    margin-top: -8vh;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

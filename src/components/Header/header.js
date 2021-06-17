@@ -19,6 +19,7 @@ import eth from '../../images/ethereum.png';
 import matic from '../../images/matic.png';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const linkStyle = {
   color: 'white',
@@ -39,6 +40,25 @@ const dropdownLinkStyle = {
   padding: '0px'
 }
 
+const linkStyleMobile = {
+  color: 'white',
+  textDecoration: 'none',
+  marginRight: '5vw',
+  fontSize: '1.25em',
+  fontFamily: 'WhiteRabbit',
+  textTransform: 'none',
+}
+
+const dropdownLinkStyleMobile = {
+  color: 'white',
+  textDecoration: 'none',
+  marginRight: '5vw',
+  fontSize: '1.25em',
+  fontFamily: 'WhiteRabbit',
+  textTransform: 'none',
+  padding: '0px'
+}
+
 const menuStyle = {
   backgroundColor: '#14181D'
 }
@@ -48,6 +68,22 @@ const menuLinkStyle = {
   textDecoration: 'none',
   marginRight: '5vw',
   fontSize: '1.5em',
+  fontFamily: 'WhiteRabbit',
+  textTransform: 'none',
+  backgroundColor: '#14181D'
+}
+
+const rightMostLinkStyleMobile = {
+  color: 'white',
+  textDecoration: 'none',
+  fontSize: '1.25em'
+}
+
+const menuLinkStyleMobile = {
+  color: 'white',
+  textDecoration: 'none',
+  marginRight: '5vw',
+  fontSize: '1.25em',
   fontFamily: 'WhiteRabbit',
   textTransform: 'none',
   backgroundColor: '#14181D'
@@ -88,6 +124,7 @@ export default function Header({props}) {
       setServicesAnchorEl(null);
     };
 
+    const isMobile = useMediaQuery('(max-width:768px)');
 
     const [price, setPrice] = React.useState('$0.00');
 
@@ -101,19 +138,19 @@ export default function Header({props}) {
                 <a href="https://github.com"><img src={githubIcon} className='social-icon'/></a>
                 <button className="connect-wallet-button" onClick={() => connectWallet()}>Connect</button>
             </Box>
-            <Box className={'flex-row y-centre'}>
+            <Box className={'flex-row y-centre wrap-mobile'}>
                 <GatsbyLink to={'/'}>
-                  <Box mr={'20px'} sx={{position: 'relative', top: '4px'}}>
+                  <Box mr={isMobile ? '100px' : '20px'} sx={{position: 'relative', top: '4px'}}>
                       <img src={achIcon} alt={'ach logo'} height={'40px'} style={{marginRight: '10px'}} className="vert-align"/>
                       <img src={achTools} alt={'ach tools'} height={'22px'} className="vert-align"/>
                   </Box>
                 </GatsbyLink>
                 <Box mr={'12px'} sx={{position: 'relative', top: '4px'}}>{price}</Box>
                 <Box className={'flex-spacer'}/>
-                <GatsbyLink to={'/about'} style={linkStyle} activeStyle={activePageStyle} className={'nav-button'}>
+                <GatsbyLink to={'/about'} style={isMobile ? linkStyleMobile : linkStyle} activeStyle={activePageStyle} className={'nav-button'}>
                     <Box className={'hover'}>About<span style={{opacity: 0}}> ̬</span></Box>
                 </GatsbyLink>
-                <Button style={dropdownLinkStyle} component={'a'} className={'nav-button-dd'} aria-controls="simple-menu" aria-haspopup="true" onClick={handleChartsClick}>
+                <Button style={isMobile ? dropdownLinkStyleMobile : dropdownLinkStyle} component={'a'} className={'nav-button-dd'} aria-controls="simple-menu" aria-haspopup="true" onClick={handleChartsClick}>
                     <Box className={'hover'}>Charts ̬</Box>
                 </Button>
                 <Menu
@@ -126,22 +163,22 @@ export default function Header({props}) {
                   TransitionComponent={Fade}
                 >
                   <MenuItem onClick={handleChartsClose} style={menuStyle}>
-                    <Link style={menuLinkStyle} underline="none" component="a" color="white" href={'https://bsc.ach.tools'} target="_blank">
+                    <Link style={isMobile ? menuLinkStyleMobile : menuLinkStyle} underline="none" component="a" color="white" href={'https://bsc.ach.tools'} target="_blank">
                       <img src={bsc} width="20vw" style={{marginRight: "5px", verticalAlign: "middle"}}/>BSC
                     </Link>
                   </MenuItem>
                   <MenuItem onClick={handleChartsClose} style={menuStyle}>
-                    <Link style={menuLinkStyle} underline="none" component="a" color="white" href={'https://eth.ach.tools'} target="_blank">
+                    <Link style={isMobile ? menuLinkStyleMobile : menuLinkStyle} underline="none" component="a" color="white" href={'https://eth.ach.tools'} target="_blank">
                       <img src={eth} width="20vw" style={{marginRight: "5px", verticalAlign: "middle"}}/>Ethereum
                     </Link>
                   </MenuItem>
                   <MenuItem onClick={handleChartsClose} style={menuStyle}>
-                    <Link style={menuLinkStyle} underline="none" component="a" color="white" href={'https://matic.ach.tools'} target="_blank">
+                    <Link style={isMobile ? menuLinkStyleMobile : menuLinkStyle} underline="none" component="a" color="white" href={'https://matic.ach.tools'} target="_blank">
                       <img src={matic} width="20vw" style={{marginRight: "5px", verticalAlign: "middle"}}/>Polygon
                     </Link>
                   </MenuItem>
                 </Menu>
-                <Button style={dropdownLinkStyle} component={'a'} className={'nav-button-dd'} aria-controls="simple-menu" aria-haspopup="true" onClick={handleServicesClick}>
+                <Button style={isMobile ? dropdownLinkStyleMobile: dropdownLinkStyle} component={'a'} className={'nav-button-dd'} aria-controls="simple-menu" aria-haspopup="true" onClick={handleServicesClick}>
                     <Box className={'hover'}>Services ̬</Box>
                 </Button>
                 <Menu
@@ -154,17 +191,17 @@ export default function Header({props}) {
                   TransitionComponent={Fade}
                 >
                   <MenuItem onClick={handleServicesClose} style={menuStyle}>
-                    <GatsbyLink style={menuLinkStyle} underline="none" component="a" color="white" to={'/advertising'}>
+                    <GatsbyLink style={isMobile ? menuLinkStyleMobile : menuLinkStyle} underline="none" component="a" color="white" to={'/advertising'}>
                       Advertising
                     </GatsbyLink>
                   </MenuItem>
                   <MenuItem onClick={handleServicesClose} style={menuStyle}>
-                    <Link style={menuLinkStyle} underline="none" component="a" color="white" href={'https://ach.tools/#/tabs/pricebots'} target="_blank">
+                    <Link style={isMobile ? menuLinkStyleMobile : menuLinkStyle} underline="none" component="a" color="white" href={'https://ach.tools/#/tabs/pricebots'} target="_blank">
                       Pricebots
                     </Link>
                   </MenuItem>
                 </Menu>
-                <GatsbyLink to={'https://snowgecoin.com/swap/#/swap?outputCurrency=0xc13a1b47377a8382bd3f6f9105137c1e838758b9'} target="_blank" style={rightMostLinkStyle} className={'nav-button'}>
+                <GatsbyLink to={'https://snowgecoin.com/swap/#/swap?outputCurrency=0xc13a1b47377a8382bd3f6f9105137c1e838758b9'} target="_blank" style={isMobile ? rightMostLinkStyleMobile : rightMostLinkStyle} className={'nav-button'}>
                     <Box className={'hover'}>Buy<span style={{opacity: 0}}> ̬</span></Box>
                 </GatsbyLink>
             </Box>

@@ -6,8 +6,8 @@ const darkTheme = {
         secondary: "#ff3434",
     },
     fonts: {
-        body: "Consolas, system-ui, sans-serif",
-        heading: "Consolas, system-ui, sans-serif",
+        body: "Consolas, Inconsolata, system-ui, sans-serif",
+        heading: "Consolas, Inconsolata, system-ui, sans-serif",
         monospace: "Menlo, monospace",
     },
     fontWeights: {

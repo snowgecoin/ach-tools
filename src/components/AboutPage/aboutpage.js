@@ -8,6 +8,7 @@ import './aboutpage.scss'
 import 'aos/dist/aos.css';
 import {Box} from "@theme-ui/components";
 import { PieChart } from 'react-minimal-pie-chart';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const chartData = [
   { title: 'Burned Supply', value: 65.64, color: 'rgb(47,114,199)' },
@@ -43,8 +44,11 @@ export default function AboutPage({props}) {
       return entry;
     });
 
+    const isMobile = useMediaQuery('(max-width:768px)');
+    const headerMargin = isMobile ? '2vh' : '12vh';
+
     return (
-        <Box sx={{marginTop: '12vh', marginBottom: 20}}>
+        <Box sx={{marginTop: headerMargin, marginBottom: 20}}>
             <Box className={'flex-row y-centre'}>
                 <div className="header-text" data-aos="zoom-out">Overview</div>
             </Box>
@@ -73,7 +77,7 @@ export default function AboutPage({props}) {
                     </div>
                 </Box>
               </Box>
-              <Box style={{padding: '50px', width: '30vw'}}>
+              <Box style={{padding: '50px', width: `${isMobile ? '100vw' : '30vw'}`}}>
                 <PieChart
                   data={animatedChartData}
                   label={({ dataEntry }) => dataEntry.value}

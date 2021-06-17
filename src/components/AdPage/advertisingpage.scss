@@ -42,6 +42,7 @@
   color: rgb(138, 232, 122);
   background-color: rgb(35, 51, 40);
   border: 2px solid rgb(138, 232, 122);
+  width: 100%;
   cursor: pointer;
   margin-bottom: 5px;
   transition: all 200ms linear;
@@ -49,5 +50,11 @@
     color: white;
     border: 2px solid white;
     transition: all 200ms linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .ad-chain-img {
+    width: 10vw;
   }
 }
