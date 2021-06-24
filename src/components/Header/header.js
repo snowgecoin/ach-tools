@@ -135,7 +135,7 @@ export default function Header({props}) {
                 <a href="https://discord.gg/kVXnpMbs"><img src={discordIcon} className='social-icon'/></a>
                 <a href="https://www.reddit.com/r/ACHTools/"><img src={redditIcon} className='social-icon'/></a>
                 <a href="https://twitter.com/achtools"><img src={twitterIcon} className='social-icon'/></a>
-                <a href="https://github.com"><img src={githubIcon} className='social-icon'/></a>
+                <a href="https://github.com/snowgecoin/ach-tools"><img src={githubIcon} className='social-icon'/></a>
                 <button className="connect-wallet-button" onClick={() => connectWallet()}>Connect</button>
             </Box>
             <Box className={'flex-row y-centre wrap-mobile'}>
