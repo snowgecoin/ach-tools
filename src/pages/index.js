@@ -94,7 +94,7 @@ const IndexPage = () => {
               <Box style={{minHeight: '60vh'}}>
                   <HomePage/>
               </Box>
-              <Box data-aos="fade-up">
+              <Box>
                   <Footer></Footer>
               </Box>
           </Container>
