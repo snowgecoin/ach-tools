@@ -53,8 +53,8 @@ export default function AboutPage({props}) {
                 <div className="header-text" data-aos="zoom-out">Overview</div>
             </Box>
             <Box data-aos="fade-up">
-                <div className="body-text">The most advanced Decentralized Finance (DeFi) dashboard - aiming to
-                supercharge your trading experience on the Binance Smart Chain (BSC), Polygon (Matic), and Ethereum (ETH).
+                <div className="body-text">The most advanced Decentralized Finance (DeFi) price bots - aiming to
+                supercharge your trading experience on the Binance Smart Chain (BSC), Polygon (Matic), and Ethereum (ETH) and KuCoin (KCC).
                 </div>
                 <div className="body-text">Our main goal is to provide traders and investors with the ability to monitor
                 their favorite pairs and create advanced trading strategies without having to search for information in a

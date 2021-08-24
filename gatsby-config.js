@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: "AchTools",
-        description: 'Front end site for ACHtools, the most advanced multichain DeFi dashboard.', // TODO
+        description: 'Front end site for ACHtools, the most advanced multichain DeFi price bots.', 
         author: 'SnowgeMami & Eggs :)'
     },
     flags: {

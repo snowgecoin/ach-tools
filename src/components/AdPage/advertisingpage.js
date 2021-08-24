@@ -74,10 +74,10 @@ export default function AdPage({props}) {
             </Box>
             <Box className={'flex-row x-centre'} data-aos="fade-up">
               <Box className={"body-text flex-column y-centre flex-one"} mx={20}>
-                <a style={{textDecoration: 'none', color: 'white'}} href="https://ach.tools/#/tabs/pricebots">
+                <a style={{textDecoration: 'none', color: 'white'}} href="https://bsc.ach.tools/#/tabs/pricebots">
                   <img src={bsc} className="ad-chain-img"/>
                 </a>
-                <a style={{textDecoration: 'none', color: 'white'}} href="https://ach.tools/#/tabs/pricebots">
+                <a style={{textDecoration: 'none', color: 'white'}} href="https://bsc.ach.tools/#/tabs/pricebots">
                   500+ Binance Smart Chain Bots
                 </a>
               </Box>

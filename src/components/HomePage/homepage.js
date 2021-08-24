@@ -39,10 +39,10 @@ export default function HomePage({props}) {
 
     function goToChart() {
       console.log(`Going to ${activeChain}.ach.tools`);
-      var url = "https://ach.tools";
+      var url = "https://bsc.ach.tools";
       switch (activeChain) {
         case 'BSC':
-          url = `https://ach.tools/#/tabs/home/${textField}`;
+          url = `https://bsc.ach.tools/#/tabs/home/${textField}`;
           break;
         case 'Ethereum':
           url = `https://eth.ach.tools/#/tabs/home/${textField}`;
@@ -51,7 +51,7 @@ export default function HomePage({props}) {
           url = `https://matic.ach.tools/#/tabs/home/${textField}`;
           break;
         default:
-          url = `https://ach.tools/#/tabs/home/${textField}`;
+          url = `https://bsc.ach.tools/#/tabs/home/${textField}`;
           break;
       }
       console.log(activeChain);
@@ -77,7 +77,7 @@ export default function HomePage({props}) {
     return (
         <Box sx={{marginTop: '12vh', marginBottom: 20}}>
             <Box className={'flex-row y-centre'}>
-                <div className="homepage-text focus-in-contract-bck">The most advanced multichain defi dashboard</div>
+                <div className="homepage-text focus-in-contract-bck">The most advanced multichain defi price bots</div>
             </Box>
             <Box className={'flex-row y-centre'} data-aos="fade-up" data-aos-delay="1000">
                 <div className="search-field-wrapper">

@@ -136,7 +136,6 @@ export default function Header({props}) {
                 <a href="https://www.reddit.com/r/ACHTools/"><img src={redditIcon} className='social-icon'/></a>
                 <a href="https://twitter.com/achtools"><img src={twitterIcon} className='social-icon'/></a>
                 <a href="https://github.com/snowgecoin/ach-tools"><img src={githubIcon} className='social-icon'/></a>
-                <button className="connect-wallet-button" onClick={() => connectWallet()}>Connect</button>
             </Box>
             <Box className={'flex-row y-centre wrap-mobile'}>
                 <GatsbyLink to={'/'}>
@@ -145,7 +144,6 @@ export default function Header({props}) {
                       <img src={achTools} alt={'ach tools'} height={'22px'} className="vert-align"/>
                   </Box>
                 </GatsbyLink>
-                <Box mr={'12px'} sx={{position: 'relative', top: '4px'}}>{price}</Box>
                 <Box className={'flex-spacer'}/>
                 <GatsbyLink to={'/about'} style={isMobile ? linkStyleMobile : linkStyle} activeStyle={activePageStyle} className={'nav-button'}>
                     <Box className={'hover'}>About<span style={{opacity: 0}}> ̬</span></Box>
@@ -196,7 +194,7 @@ export default function Header({props}) {
                     </GatsbyLink>
                   </MenuItem>
                   <MenuItem onClick={handleServicesClose} style={menuStyle}>
-                    <Link style={isMobile ? menuLinkStyleMobile : menuLinkStyle} underline="none" component="a" color="white" href={'https://ach.tools/#/tabs/pricebots'} target="_blank">
+                    <Link style={isMobile ? menuLinkStyleMobile : menuLinkStyle} underline="none" component="a" color="white" href={'https://bsc.ach.tools/#/tabs/pricebots'} target="_blank">
                       Pricebots
                     </Link>
                   </MenuItem>
