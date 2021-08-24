@@ -55,7 +55,7 @@ export default function AdPage({props}) {
                   <div className="body-text" data-aos="fade-up"><b>Instructions:</b>{` Provide us with a short (<160 character) message -
                     it will be featured at the bottom of active pricebots, and will include metrics of time shown/hour.`}
                   </div>
-                  <div className="body-text" data-aos="fade-up"><b style={{color: '#5DED6B'}}>Pricing:</b> 2 BNB → 1 Week || 1 BNB → 3 Days</div>
+                  <div className="body-text" data-aos="fade-up"><b style={{color: '#5DED6B'}}>Pricing:</b> 1 BNB → 1 Week or 0.5 BNB → 3 Days</div>
                 </Box>
                 <Box className={'flex-column'} mx={'5vw'} mb={'5vh'}>
                   <div className="header-text" data-aos="zoom-out">Token Posts</div>
@@ -66,7 +66,7 @@ export default function AdPage({props}) {
                   <div className="body-text" data-aos="fade-up">• First Come, First Serve</div>
                   <div className="body-text" data-aos="fade-up"><b>Instructions:</b>{` Requires Reservations. Post a large block of text on my
                     channel, including an image. Must fit in one post! See `}
-                    <a style={{textDecoration: 'none', color: 'white'}} href="https://t.me/custompricebots">@CustomPriceBots</a>
+                    <a style={{textDecoration: 'none', color: 'white'}} target="_blank" href="https://t.me/custompricebots">@CustomPriceBots</a>
                     {` for details.`}
                   </div>
                   <div className="body-text" data-aos="fade-up"><b style={{color: '#5DED6B'}}>Pricing:</b> 0.5 BNB → 24 Hours || 1 BNB → 48 Hours</div>
@@ -106,7 +106,7 @@ export default function AdPage({props}) {
             <Box className={'flex-row x-centre contact'} mt={'5vh'}>
               <Box className={'flex-column'}>
                 <div className="header-text">Contact us on Telegram to get started!</div>
-                <a href="https://t.me/dasilva333"><button className="buy-ads-button" data-aos="fade-up">Purchase Advertising</button></a>
+                <a target="_blank" href="https://t.me/dasilva333"><button className="buy-ads-button" data-aos="fade-up">Purchase Advertising</button></a>
               </Box>
             </Box>
         </Box>

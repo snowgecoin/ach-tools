@@ -29,10 +29,10 @@ export default function Footer({props}) {
                 <span className={'flex-spacer'}></span>
                 <Box className={'flex-column'}>
                   <div className="footer-section-header">Community</div>
-                  <a href="https://twitter.com/achtools"><div className="footer-section-text">Twitter</div></a>
-                  <a href="https://t.me/achtools"><div className="footer-section-text">Telegram</div></a>
-                  <a href="https://discord.gg/kVXnpMbs"><div className="footer-section-text">Discord</div></a>
-                  <a href="https://www.reddit.com/r/ACHTools/"><div className="footer-section-text">Reddit</div></a>
+                  <a target="_blank" href="https://twitter.com/achtools"><div className="footer-section-text">Twitter</div></a>
+                  <a target="_blank" href="https://t.me/achtools"><div className="footer-section-text">Telegram</div></a>
+                  <a target="_blank" href="https://discord.gg/kVXnpMbs"><div className="footer-section-text">Discord</div></a>
+                  <a target="_blank" href="https://www.reddit.com/r/ACHTools/"><div className="footer-section-text">Reddit</div></a>
                 </Box>
                 <span className={'flex-spacer'}></span>
                 <Box className={'flex-column'}>

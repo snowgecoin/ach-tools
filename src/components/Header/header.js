@@ -195,7 +195,7 @@ export default function Header({props}) {
                   </MenuItem>
                   <MenuItem onClick={handleServicesClose} style={menuStyle}>
                     <Link style={isMobile ? menuLinkStyleMobile : menuLinkStyle} underline="none" component="a" color="white" href={'https://bsc.ach.tools/#/tabs/pricebots'} target="_blank">
-                      Pricebots
+                      PriceBots
                     </Link>
                   </MenuItem>
                 </Menu>
