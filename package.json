@@ -38,6 +38,7 @@
     "react-particles-js": "^3.4.1",
     "sass": "^1.34.1",
     "theme-ui": "^0.9.1",
+    "tsparticles": "^1.34.0",
     "yarn": "^1.22.10"
   }
 }
